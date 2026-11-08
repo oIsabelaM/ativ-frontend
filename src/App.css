@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffeef7, #fce4ec, #f8e8ff);
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 430px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 3px solid #f5b8d2;
+  border-radius: 35px;
+  padding: 40px 32px 30px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(194, 111, 151, 0.18);
+  position: relative;
+  z-index: 2;
+}
+
+.gato {
+  font-size: 90px;
+  line-height: 1;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 8px 5px rgba(180, 100, 140, 0.15));
+}
+
+h1 {
+  margin: 0;
+  color: #9b5277;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subtitulo {
+  color: #9d7b8d;
+  font-size: 15px;
+  margin: 10px 0 28px;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+  background: #fff4f8;
+  border: 2px solid #f7d2e2;
+  border-radius: 20px;
+  padding: 16px;
+  transition: transform 0.2s ease;
+}
+
+.info:hover {
+  transform: translateY(-3px);
+}
+
+.icone {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbd1e2;
+  border-radius: 15px;
+  font-size: 24px;
+}
+
+.info div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.titulo {
+  color: #b27b96;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.info strong {
+  color: #75465d;
+  font-size: 16px;
+}
+
+.patinhas {
+  color: #d68aad;
+  font-size: 20px;
+  margin: 25px 0 12px;
+}
+
+.rodape {
+  color: #b08b9d;
+  font-size: 12px;
+  margin: 0;
+}
+
+.decoracao {
+  position: absolute;
+  color: #e6a6c3;
+  font-size: 35px;
+  opacity: 0.7;
+}
+
+.decoracao-1 {
+  top: 12%;
+  left: 15%;
+}
+
+.decoracao-2 {
+  top: 20%;
+  right: 16%;
+  font-size: 25px;
+}
+
+.decoracao-3 {
+  bottom: 15%;
+  left: 18%;
+  font-size: 28px;
+}
+
+.orelhas {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  right: 25px;
+  display: flex;
+  justify-content: space-between;
+  color: #e6a6c3;
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 35px 22px 25px;
+  }
+
+  .gato {
+    font-size: 75px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
